@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-image-banner {
+  background-image: url("../src/assets/images/chair.png");
+  position: relative;
+}
+
+.background-image-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.91);
+}
+.btn-gradient {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #19d3ae -22.5%, #0fcfec 120.83%);
+  color: white;
+}
+.testimonial-shadow {
+  background: #fff;
+  box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.05);
+}
